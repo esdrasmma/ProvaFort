@@ -197,15 +197,19 @@ namespace ProjetoProvaFortes
                 foreach (var p in prestador)
                 {
                     string x = "";
-                    x = " CNPJ : " + p.CNPJ
-                        + " Nome : " + p.NOME
-                        + " RazaoSocial : " + p.RAZAOSOCIAL
-                        + " Rua : " + p.RUA
-                        + " Numero : " + p.NUMERO
-                        + " Bairro : " + p.BAIRRO
-                        + " UF : " + p.UF
-                        + " CEP : " + p.CEP
-                        + " Telefone : " + p.TELEFONE;
+                    x = "<Prestador Id=\"" + p.ID + "\">\"" + Environment.NewLine
+                        + "  <Prestador>" + Environment.NewLine
+                        + "    <CNPJ>" + p.CNPJ + "</CNPJ>" + Environment.NewLine
+                        + "    <Nome>" + p.NOME + "</Nome>" + Environment.NewLine
+                        + "    <RazaoSocial>" + p.RAZAOSOCIAL + "</RazaoSocial>" + Environment.NewLine
+                        + "    <Rua>" + p.RUA + "</Rua>" + Environment.NewLine
+                        + "    <Numero>" + p.NUMERO + "</Numero>" + Environment.NewLine
+                        + "    <Bairro>: " + p.BAIRRO + "</Bairro>: " + Environment.NewLine
+                        + "    <UF>" + p.UF + "</UF>" + Environment.NewLine
+                        + "    <CEP>" + p.CEP + "</CEP>" + Environment.NewLine
+                        + "    <Telefone>" + p.TELEFONE + "</Telefone>" + Environment.NewLine
+                        + "  </Prestador>" + Environment.NewLine
+                        + "</Prestador>";
 
                     using (StreamWriter sw = File.AppendText(pathJson))
                     {
@@ -215,17 +219,21 @@ namespace ProjetoProvaFortes
 
                 }
 
-                foreach (var t in tomador)
+                foreach (var p in tomador)
                 {
                     string x = "";
-                    x = " CNPJ : " + t.CNPJ
-                        + " Nome : " + t.NOME
-                        + " Rua : " + t.RUA
-                        + " Numero : " + t.NUMERO
-                        + " Bairro : " + t.BAIRRO
-                        + " UF : " + t.UF
-                        + " Telefone : " + t.TELEFONE
-                        + " Email : " + t.EMAIL;
+                    x = "<Tomador Id=\"" + p.ID + "\">\"" + Environment.NewLine
+                           + "  <Tomador>" + Environment.NewLine
+                           + "    <CNPJ>" + p.CNPJ + "</CNPJ>" + Environment.NewLine
+                           + "    <Nome>" + p.NOME + "</Nome>" + Environment.NewLine
+                           + "    <Rua>" + p.RUA + "</Rua>" + Environment.NewLine
+                           + "    <Numero>" + p.NUMERO + "</Numero>" + Environment.NewLine
+                           + "    <Bairro>: " + p.BAIRRO + "</Bairro>: " + Environment.NewLine
+                           + "    <UF>" + p.UF + "</UF>" + Environment.NewLine
+                           + "    <Telefone>" + p.TELEFONE + "</Telefone>" + Environment.NewLine
+                           + "    <Email>" + p.EMAIL + "</Email>" + Environment.NewLine
+                           + "  </Tomador>" + Environment.NewLine
+                           + "</Tormador>";
                     using (StreamWriter sw = File.AppendText(pathJson))
                     {
                         sw.WriteLine(x);
@@ -237,9 +245,13 @@ namespace ProjetoProvaFortes
                 foreach (var n in nota)
                 {
                     string x = "";
-                    x = " Numero : " + n.NUMERO
-                        + " Data : " + n.DATA
-                        + " Valor : " + n.VALOR;
+                    x = "<Nota Id=\"" + n.ID + "\">\"" + Environment.NewLine
+                        + "  <Nota>" + Environment.NewLine
+                        + "    <Numero>" + n.NUMERO + "</Numero>" + Environment.NewLine
+                        + "    <Data>" + n.DATA + "</Data>" + Environment.NewLine
+                        + "    <Valor>" + n.VALOR + "</Valor>" + Environment.NewLine
+                         + "  </Nota>" + Environment.NewLine
+                           + "</Nota>";
 
                     using (StreamWriter sw = File.AppendText(pathJson))
                     {
@@ -253,12 +265,15 @@ namespace ProjetoProvaFortes
                 foreach (var i in item)
                 {
                     string x = "";
-                    x = " Matricula : " + i.MATRICULA
-                        + " Numero : " + i.NUMERO
-                        + " Nome : " + i.NOME
-                        + " Quantidade : " + i.QUANTIDADE
-                        + " Valor : " + i.VALOR
-                        ;
+                    x = "<Item Id=\"" + i.ID + "\">\"" + Environment.NewLine
+                        + "  <Item>" + Environment.NewLine
+                        + "    <Matricula>" + i.MATRICULA + "</Matricula>" + Environment.NewLine
+                        + "    <Numero>" + i.NUMERO + "</Numero>" + Environment.NewLine
+                        + "    <Nome>" + i.NOME + "</Nome>" + Environment.NewLine
+                        + "    <Quantidade>" + i.QUANTIDADE + "</Quantidade>" + Environment.NewLine
+                        + "    <Valor>" + i.VALOR + "</Valor>" + Environment.NewLine
+                           + "  </Item>" + Environment.NewLine
+                           + "</Item>";
 
                     using (StreamWriter sw = File.AppendText(pathJson))
                     {

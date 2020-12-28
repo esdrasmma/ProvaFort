@@ -1,0 +1,15 @@
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\bin\Debug\ProjetoProvaFortes.exe.config
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\bin\Debug\ProjetoProvaFortes.exe
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\bin\Debug\ProjetoProvaFortes.pdb
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\bin\Debug\EntityFramework.dll
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\bin\Debug\EntityFramework.xml
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\obj\Debug\ProjetoProvaFortes.csprojAssemblyReference.cache
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\obj\Debug\ProjetoProvaFortes.Properties.Resources.resources
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\obj\Debug\ProjetoProvaFortes.csproj.GenerateResource.cache
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\obj\Debug\ProjetoProvaFortes.csproj.CoreCompileInputs.cache
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\obj\Debug\ProjetoProvaFortes.csproj.CopyComplete
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\obj\Debug\ProjetoProvaFortes.exe
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\obj\Debug\ProjetoProvaFortes.pdb
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\obj\Debug\ProjetoProvaFortes.btnJson.resources

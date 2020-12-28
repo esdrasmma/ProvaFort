@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBProvaFortesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbItem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MATRICULA" Type="varchar" MaxLength="50" />
+    <Property Name="NUMERO" Type="varchar" MaxLength="50" />
+    <Property Name="NOME" Type="varchar" MaxLength="50" />
+    <Property Name="QUANTIDADE" Type="varchar" MaxLength="50" />
+    <Property Name="VALOR" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbNota">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NUMERO" Type="varchar" MaxLength="50" />
+    <Property Name="DATA" Type="varchar" MaxLength="50" />
+    <Property Name="VALOR" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbPrestador">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CNPJ" Type="varchar" MaxLength="50" />
+    <Property Name="NOME" Type="varchar" MaxLength="50" />
+    <Property Name="RAZAOSOCIAL" Type="varchar" MaxLength="50" />
+    <Property Name="RUA" Type="varchar" MaxLength="50" />
+    <Property Name="NUMERO" Type="varchar" MaxLength="50" />
+    <Property Name="BAIRRO" Type="varchar" MaxLength="50" />
+    <Property Name="UF" Type="varchar" MaxLength="50" />
+    <Property Name="CEP" Type="varchar" MaxLength="50" />
+    <Property Name="TELEFONE" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbTomador">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CNPJ" Type="varchar" MaxLength="50" />
+    <Property Name="NOME" Type="varchar" MaxLength="50" />
+    <Property Name="RUA" Type="varchar" MaxLength="50" />
+    <Property Name="NUMERO" Type="varchar" MaxLength="50" />
+    <Property Name="BAIRRO" Type="varchar" MaxLength="50" />
+    <Property Name="UF" Type="varchar" MaxLength="50" />
+    <Property Name="TELEFONE" Type="varchar" MaxLength="50" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="DBProvaFortesModelStoreContainer">
+    <EntitySet Name="tbItem" EntityType="Self.tbItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbNota" EntityType="Self.tbNota" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbPrestador" EntityType="Self.tbPrestador" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbTomador" EntityType="Self.tbTomador" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBProvaFortesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbItem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MATRICULA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NUMERO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="QUANTIDADE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VALOR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbNota">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NUMERO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DATA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VALOR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbPrestador">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CNPJ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RAZAOSOCIAL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RUA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NUMERO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BAIRRO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UF" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CEP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbTomador">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CNPJ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RUA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NUMERO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BAIRRO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UF" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="DBProvaFortesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbItem" EntityType="Self.tbItem" />
+    <EntitySet Name="tbNota" EntityType="Self.tbNota" />
+    <EntitySet Name="tbPrestador" EntityType="Self.tbPrestador" />
+    <EntitySet Name="tbTomador" EntityType="Self.tbTomador" />
+  </EntityContainer>
+</Schema>

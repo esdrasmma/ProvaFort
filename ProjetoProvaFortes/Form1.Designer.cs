@@ -1,7 +1,7 @@
 ﻿
 namespace ProjetoProvaFortes
 {
-    partial class btnJson
+    partial class frmPrincipal
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -68,7 +68,7 @@ namespace ProjetoProvaFortes
             this.btnXML.UseVisualStyleBackColor = true;
             this.btnXML.Click += new System.EventHandler(this.btnXML_Click);
             // 
-            // btnJson
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,7 +76,7 @@ namespace ProjetoProvaFortes
             this.Controls.Add(this.btnXML);
             this.Controls.Add(this.btnJason);
             this.Controls.Add(this.btnLeitorTxt);
-            this.Name = "btnJson";
+            this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela Principal";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -16,7 +16,7 @@ namespace ProjetoProvaFortes
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new btnJson());
+            Application.Run(new frmPrincipal());
         }
     }
 }

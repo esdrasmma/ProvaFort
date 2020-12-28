@@ -12,4 +12,4 @@ C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\obj\Debug\Projet
 C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\obj\Debug\ProjetoProvaFortes.csproj.CopyComplete
 C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\obj\Debug\ProjetoProvaFortes.exe
 C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\obj\Debug\ProjetoProvaFortes.pdb
-C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\obj\Debug\ProjetoProvaFortes.btnJson.resources
+C:\Projetos\Meus Projetos\ProjetoProvaFortes\ProjetoProvaFortes\obj\Debug\ProjetoProvaFortes.frmPrincipal.resources

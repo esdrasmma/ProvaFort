@@ -11,12 +11,12 @@ using System.IO;
 
 namespace ProjetoProvaFortes
 {
-    public partial class btnJson : Form
+    public partial class frmPrincipal : Form
     {
         DBProvaFortesEntities db = new DBProvaFortesEntities();
         public int itensPersistindos = 0;
 
-        public btnJson()
+        public frmPrincipal()
         {
             InitializeComponent();
         }
@@ -300,11 +300,13 @@ namespace ProjetoProvaFortes
         private void button2_Click(object sender, EventArgs e)
         {
             CriarJson();
+            MessageBox.Show("Arquivo  Atualizado");
         }
 
         private void btnXML_Click(object sender, EventArgs e)
         {
             CriarXML();
+            MessageBox.Show("Arquivo  Atualizado");
         }
     }
 }
